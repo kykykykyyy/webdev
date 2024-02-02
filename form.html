@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2><i>CODING CLUB APPLICATION FORM</i></h2>
+
+    <section id="form">
+        <div class="form-container">
+
+            <form 
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbydeQrm-i1vab1nBxJ20qSahCJ_fEk4NhfP3TZUcnM9cpUPQ_dul5N97uyR4H6_E-dRSg/exec">
+                <div class="form-row">
+                    <label for="student_number">Student Number:</label>
+                    <input type="text" id="student_number" name="student_number" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="middle_name">Middle Name:</label>
+                    <input type="text" id="middle_name" name="middle_name" pattern="[A-Za-z ]+" title="Only letters are allowed">
+                </div>
+                <div class="form-row">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="date_of_birth">Date of Birth (YYYY/MM/DD):</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" pattern="\d{4}/\d{2}/\d{2}" placeholder="YYYY/MM/DD" required>
+                </div>
+                <div class="form-row">
+                    <label for="college">College:</label>
+                    <input type="text" id="college" name="college" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+                </div>                
+                <div class="form-row">
+                    <label for="course_year_sec">Course, Year & Section:</label>
+                    <input type="text" id="course_year_sec" name="course_year_sec" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="home_address">Home Address:</label>
+                    <input type="text" id="home_address" name="home_address" pattern="[A-Za-z0-9,.\s#-]+" title="Only letters, numbers, comma and period are allowed" required>
+                </div>
+                <div class="form-row">
+                    <label for="mobile_number">Mobile Number:</label>
+                    <input type="text" id="mobile_number" name="mobile_number" pattern="09[0-9]{9}" title="Mobile number must start with 09 and have a total of 11 digits" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

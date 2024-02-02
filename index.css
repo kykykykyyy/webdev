@@ -1,0 +1,155 @@
+body {
+    background-image: url('images/background\ \(1\).jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: repeat; /* Do not repeat the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column; 
+}
+
+#navMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navMenu ul li {
+    text-align: center;
+}
+
+#navMenu ul li a {
+    display: inline-block;
+}
+
+#navMenu ul li a img {
+    display: block;
+    margin-top: 150px;
+    transition: transform 0.3s ease; 
+}
+
+#navMenu ul li a img:hover {
+    transform: scale(1.3); 
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.849);
+    font-family: 'Courier New';
+    font-size: 40px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New';
+    font-size: 40px;
+    padding: 5px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    width: 120px; /* Adjust as needed */
+    flex: 0 0 160px; /* Added to ensure label width */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    flex: 1; /* Added to fill remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group label {
+    display: inline-flex; /* Ensure labels are inline */
+    align-items: center; /* Align items vertically */
+    margin-right: 20px; /* Adjusted margin */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit input[type="submit"] {
+    background-color: #252759;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-submit input[type="submit"]:hover {
+    background-color: #3c547c;
+}
